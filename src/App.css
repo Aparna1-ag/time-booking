@@ -6,5 +6,22 @@
 
 
 .my-bg   {
-    background-color: linear-gradient(to right, #99cf9937, #7fb49634, #6eb1c04c);
+    background-color: linear-gradient(to right, #a68fd437, #7fb49634, #6bc6da4c);
+}
+
+
+
+div  {
+    text-decoration: none;
+}
+
+p  {
+    text-decoration: none;
+}
+
+
+.card-bg {
+    background-color: linear-gradient(150deg, #5c0909, #7c1111, #bd3918, #b33d6a, #9d1717);
+    border: 1px solid red;
+    
 }
