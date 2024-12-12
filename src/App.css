@@ -5,23 +5,18 @@
 
 
 
-.my-bg   {
-    background-color: linear-gradient(to right, #a68fd437, #7fb49634, #6bc6da4c);
+.custom-bg {
+    /* background-image: url('./loginpagebg.jpeg'); */
+    background-image: url('./loginpage2.jpeg');
 }
 
 
-
-div  {
-    text-decoration: none;
+.custom-bg-translucent {
+    background: rgba(255, 255, 255, 0.70);
 }
 
-p  {
-    text-decoration: none;
-}
-
-
-.card-bg {
-    background-color: linear-gradient(150deg, #5c0909, #7c1111, #bd3918, #b33d6a, #9d1717);
-    border: 1px solid red;
-    
+.yoo {
+    color : #c1491e;
+    color: #c01919;
+    background: "linear-gradient(to right, #a68fd437, #7fb49634, #6bc6da4c)"
 }

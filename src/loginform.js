@@ -8,23 +8,30 @@ import { Link } from 'react-router-dom'
 
 const Loginform = () => {
   return (
-    <div className="w-screen h-screen flex justify-center items-center">
-    <form className="w-1/2 lg:w-1/4">
-    <div className="form-group">
+    <div className="w-screen h-screen flex justify-center items-center custom-bg py-20 px-32 "  >
+
+      <div className='custom-bg-translucent w-full h-full flex justify-content-end shadow-inner'>
+        <div className='w-2/5 h-full bg-teal-500 flex justify-center items-center text-white text-lg'> 
+        <form className="w-1/2">
+        <div className="form-group ">
+          <p className='font-bold capitalize text-xl'>USER LOGIN</p>
       <label htmlFor="exampleInputEmail1">Email address</label>
       <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-      <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
-    <div className="form-group">
+    <div className="form-group mt-2">
       <label htmlFor="exampleInputPassword1">Password</label>
       <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
     </div>
-    <div className="form-group form-check">
-      <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-      <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" className="btn btn-primary ">  <Link to="/vehicles"  >Submit   </Link> </button>
-  </form>
+  
+    <button type="submit" className="btn  bg-gradient mt-5 text-white" style={{background: "#c1491e"}}>  <Link to="/vehicles" className='text-white no-underline' >Submit   </Link> </button>
+  </form> 
+        
+        
+
+        </div>
+        
+      </div>
+ 
       </div>
   )
 }

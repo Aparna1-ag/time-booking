@@ -15,10 +15,7 @@ import IndividualProcess from './individualProcess';
 function App() {
   return (
   <Router>
-      <div className=''>
-    <p className=''>Yo</p>
-   
-  </div>
+  
     <Routes>
     <Route path="/"  element={<Home />} />
     <Route path="/vehicles"  element={<Vehicles />} />
