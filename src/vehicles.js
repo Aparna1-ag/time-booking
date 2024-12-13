@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from './navbar'
 
 
 const Vehicles = () => {
@@ -30,9 +31,11 @@ const Vehicles = () => {
 
 
   return (
-    <div class="w-screen h-screen p-24 bg-gradient-to-tr from-teal-300 via-slate-300 to-orange-300">
-      <p className='text-4xl font-bold'> Welcome <span className='text-teal-600'> Aparna !</span></p>
-      <p className='text-2xl'> Please select the vehicle you working on today.</p>
+    <div class="w-screen h-screen  bg-gradient-to-tr from-teal-300 via-slate-300 to-orange-300 more-bg">
+      <Navbar />
+   <div className='px-24 pt-16'>
+   <p className='text-4xl font-bold text-white'> Welcome <span className='text-orange-400'> Aparna !</span></p>
+      <p className='text-2xl text-white'> Please select the vehicle you working on today.</p>
     <div className='row'>
     {vehicles.map((item)=> 
           <div className='col-6 '> 
@@ -56,6 +59,7 @@ const Vehicles = () => {
 
 
     </div>
+   </div>
 
     </div>
   )

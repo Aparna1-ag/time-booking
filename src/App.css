@@ -4,10 +4,18 @@
 @tailwind utilities;
 
 
-
+.more-bg {
+    background-image: url("https://wallpapercave.com/wp/wp7442154.jpg");
+    
+}
 .custom-bg {
     /* background-image: url('./loginpagebg.jpeg'); */
     background-image: url('./loginpage2.jpeg');
+}
+
+.process-bg {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/012/658/021/original/plexus-artificial-intelligence-background-free-video.jpg");
+    background-repeat: repeat-y;
 }
 
 
@@ -18,5 +26,32 @@
 .yoo {
     color : #c1491e;
     color: #c01919;
+    color: #cd3636;
     background: "linear-gradient(to right, #a68fd437, #7fb49634, #6bc6da4c)"
 }
+
+
+.navbar-bg-custom {
+    background: rgba(255, 255, 255, 0.200);
+}
+
+
+.manage-bg {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/027/742/571/original/gears-3d-modern-illustration-on-dark-blue-background-vector.jpg");
+    
+
+
+}
+
+
+
+.apple-banana {
+    background: rgba(255, 255, 255, 0.09);
+}
+
+
+
+
+
+
+

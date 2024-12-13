@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import allProcesses from './allprocesses'
 import { motion } from "framer-motion"
+import Navbar from './navbar'
 
 const Processes = () => {
 
@@ -10,9 +11,11 @@ const Processes = () => {
 
 
   return (
-    <div className='h-screen w-screen p-16'>
-       <div className='font-bold text-3xl'> Select Process </div>
-       <div className=' text-lg'> Select the process you are starting/resuming work for Vehicle A</div>
+    <div className=' w-screen  process-bg'>
+      <Navbar />
+      <div className='px-16 pt-10'>
+      <div className='font-bold text-3xl text-white'> Select Your Process </div>
+       <div className=' text-2xl mb-10 text-white'> Select the process you are starting/resuming work for <span className='font-bold text-teal-500'>Vehicle A</span></div>
      
 
 
@@ -31,20 +34,11 @@ transition = {{type: 'spring', duration: 0.5, delay: `${item.animateDelay}`}} in
            <p className='text-white'>{item.processName}</p>
          <div className='flex'>
          <p className='text-4xl mr-8 text-green-200 font-bold'> {item.percentCompleted}</p>
-         <p className='text-4xl text-purple-200 font-bold'> {item.hoursWorked}</p>
+         <p className='text-4xl text-purple-200 font-bold'> {item.hoursWorked}h</p>
          </div>
          
            </div> </motion.div>
-           {/* <div class="card shadow-2xl mt-5 animate-jump-in animate-delay-2000  hover:animate-jump focus:animate-duration-4000" style={{width: "45rem", height: "6rem", border: "1px solid red", background: `${item.bgColor}`}}>
-           <div className="card-body text-3xl no-underline flex justify-between">
-           <p className='text-white'>{item.processName}</p>
-         <div className='flex'>
-         <p className='text-4xl mr-8 text-green-200 font-bold'> {item.percentCompleted}</p>
-         <p className='text-4xl text-purple-200 font-bold'> {item.hoursWorked}</p>
-         </div>
-         
-           </div>
-         </div> */}
+        
            </Link>
 
 
@@ -57,6 +51,7 @@ transition = {{type: 'spring', duration: 0.5, delay: `${item.animateDelay}`}} in
 
     </div>
 
+      </div>
 
 
  </div>
