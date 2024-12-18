@@ -1,21 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import allProcesses from './allprocesses'
-import { motion } from "framer-motion"
-import Navbar from './navbar'
+import React from 'react';
+import { motion } from 'framer-motion';
+import Navbar from './navbar';
+import { Link } from 'react-router-dom';
+import allProcesses from './allprocesses';
 
-const Processes = () => {
-
-
-
-
-
+const EmployeeProcess = () => {
   return (
-    <div className=' w-screen  process-bg'>
+    <div className=' w-screen  '>
       <Navbar />
       <div className='px-16 pt-10'>
-      <div className='font-bold text-3xl text-white'> Select Your Process </div>
-       <div className=' text-2xl mb-10 text-white'> Select the process you are starting/resuming work for <span className='font-bold text-teal-500'>Vehicle A</span></div>
+      <div className='font-bold text-3xl'> Select Your Process </div>
+       <div className=' text-2xl mb-10 '> Select the process you are starting/resuming work for <span className='font-bold text-teal-500'>Vehicle A</span></div>
      
 
 
@@ -46,10 +41,12 @@ transition = {{type: 'spring', duration: 0.5, delay: `${item.animateDelay}`}} in
            </div> */}
 
 
-<button class="frutiger-button">
-  <div class="inner">
-    <div class="top-white"></div>
-    <span class="text">{item.processName}</span>
+<button className="frutiger-button">
+  <div className="inner">
+    <div className="top-white"></div>
+    <span className="text">{item.processName}</span>
+    <span className='text-4xl text ml-48 text-green-200 font-bold'>{item.percentCompleted}</span>
+    <span className='text-4xl text ml-8 text-green-200 font-bold'>{item.hoursWorked}h</span>
   </div>
 </button>
            
@@ -75,8 +72,7 @@ transition = {{type: 'spring', duration: 0.5, delay: `${item.animateDelay}`}} in
 
  </div>
       
-   
   )
 }
 
-export default Processes
+export default EmployeeProcess

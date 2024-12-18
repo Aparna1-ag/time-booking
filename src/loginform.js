@@ -23,7 +23,7 @@ const Loginform = () => {
       <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
     </div>
   
-    <button type="submit" className="btn  bg-gradient mt-5 text-white" style={{background: "#c1491e"}}>  <Link to="/vehicles" className='text-white no-underline' >Submit   </Link> </button>
+    <button type="submit" className="btn  bg-gradient mt-5 text-white" style={{background: "#c1491e"}}>  <Link to="/performance" className='text-white no-underline' >Submit   </Link> </button>
   </form> 
         
         
