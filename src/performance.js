@@ -179,7 +179,7 @@ const Performance = () => {
 
 <div className="animate-fade-down animate-duration-[1000ms]">
 <div className='text-5xl font-bold mb-5'>Live Production Status</div>
-{bars2.map((item) =>  <Link className='no-underline' to="/processes"><div className='h-16 mb-8  flex' style={{width: '60rem;'}} > <p className='p-2 text-2xl w-60  mr-2 text-black'> {item.vehicle}  </p>  <div className={`h-16 ${item.color} bg-gradient `} style={{width: `${item.percentage}%`}}>      </div><div>  <div className='flex ml-3 mt-2'> <p className='text-3xl ml-3 font-bold'> {item.percentage}% </p>  <p className={`text-3xl ml-4 font-bold h-16 ${item.textCol} `}> {item.hours}h  </p> </div>    </div> </div></Link>)}
+{bars2.map((item) =>  <Link className='no-underline' to="/adminprocesses"><div className='h-16 mb-8  flex' style={{width: '60rem;'}} > <p className='p-2 text-2xl w-60  mr-2 text-black'> {item.vehicle}  </p>  <div className={`h-16 ${item.color} bg-gradient `} style={{width: `${item.percentage}%`}}>      </div><div>  <div className='flex ml-3 mt-2'> <p className='text-3xl ml-3 font-bold'> {item.percentage}% </p>  <p className={`text-3xl ml-4 font-bold h-16 ${item.textCol} `}> {item.hours}h  </p> </div>    </div> </div></Link>)}
 </div>
 
 
