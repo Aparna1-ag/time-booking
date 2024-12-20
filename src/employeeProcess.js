@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Navbar from './navbar';
 import { Link } from 'react-router-dom';
-import allProcesses from './allprocesses';
+import vendorProcesses from './vendorAccProcess';
 
 const EmployeeProcess = () => {
   return (
@@ -21,7 +21,7 @@ const EmployeeProcess = () => {
 
    <div>
    {
-      allProcesses.map((item) => 
+      vendorProcesses.map((item) => 
         <Link to="/individualProcess" className='no-underline'>
             <motion.div className = 'card shadow-2xl mt-5 hover:animate-jump' style={{width: "45rem", height: "6rem", border: "1px solid blue", background: "linear-gradient(200deg, blue, darkblue, blue, blue, darkblue, blue, darkblue)"}} variants = {{hidden: {opacity: 0, scale: 0.4}, visible: {opacity : 1, scale: 1}}}
 transition = {{type: 'spring', duration: 0.5, delay: `${item.animateDelay}`}} initial = 'hidden' animate = 'visible' > 
@@ -35,7 +35,7 @@ transition = {{type: 'spring', duration: 0.5, delay: `${item.animateDelay}`}} in
  <div className="card-body text-3xl no-underline flex justify-between">
            <p className='text-white'>{item.processName}</p>
          <div className='flex'>
-         <p className='text-4xl mr-8 text-black'> {item.percentCompleted}</p>
+         <p className='text-4xl mr-8 text-blue-300'> {item.percentCompleted}</p>
          <p className='text-4xl text-white'> {item.hoursWorked}h</p>
          </div>
            </div>

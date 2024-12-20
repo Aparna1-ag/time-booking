@@ -57,7 +57,7 @@ transition = {{type: 'spring', duration: 0.5, delay: `${item.animateDelay}`}} in
  <div className="card-body text-3xl no-underline flex justify-between">
            <p className='text-white'>{item.processName}</p>
          <div className='flex'>
-         <p className='text-4xl mr-8   font-bold'> {item.percentCompleted}</p>
+         <p className='text-4xl mr-8  text-slate-300 '> {item.percentCompleted}</p>
          <p className='text-4xl text-white font-bold'> {item.hoursWorked}h</p>
          </div>
            </div>
