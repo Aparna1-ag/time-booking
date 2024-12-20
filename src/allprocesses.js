@@ -12,7 +12,7 @@ let allProcesses = [
       processName: "Mechanical Installation",
       percentCompleted: "0%",
       hoursWorked: "0",
-      bgColor: "linear-gradient(150deg, #cd3636, #c01919, #c01919, #cd3636, #c01919, #c01919, #cd3636)",
+      bgColor: "linear-gradient(200deg, green, darkgreen, green, darkgreen, green, darkgreen, green)",
       estimatedCompletionTime: 50,
       animateDelay: 0.6
 
@@ -21,7 +21,7 @@ let allProcesses = [
       processName: "Hydraulics",
       percentCompleted: "75%",
       hoursWorked: "7",
-      bgColor: "linear-gradient(200deg, #cd3636, #c01919, #c01919, #cd3636, #c01919, #c01919, #cd3636)",
+      bgColor: "linear-gradient(200deg, green, darkgreen, green, darkgreen, green, darkgreen, green)",
       estimatedCompletionTime: 80,
       animateDelay: 0.8
 
@@ -30,7 +30,7 @@ let allProcesses = [
       processName: "Painting",
       percentCompleted: "32%",
       hoursWorked: "5",
-      bgColor: "linear-gradient(150deg, #cd3636, #c01919, #c01919, #cd3636, #c01919, #c01919, #cd3636)",
+      bgColor: "linear-gradient(200deg, purple, darkmagenta, purple, darkmagenta, purple, darkmagenta, purple)",
       estimatedCompletionTime: 12,
       animateDelay: 1.0
 
@@ -39,7 +39,7 @@ let allProcesses = [
       processName: "Assembling",
       percentCompleted: "54%",
       hoursWorked: "19",
-      bgColor: "linear-gradient(200deg, #cd3636, #c01919, #c01919, #cd3636, #c01919, #c01919, #cd3636)",
+      bgColor: "linear-gradient(200deg, green, darkgreen, green, darkgreen, green, darkgreen, green)",
       estimatedCompletionTime: 12,
       animateDelay: 1.2
 

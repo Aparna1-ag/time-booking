@@ -45,24 +45,24 @@ const Processes = () => {
    {
       allProcesses.map((item) => <div>
         
-            {/* <motion.div className = 'card shadow-2xl mt-5 hover:animate-jump' style={{width: "45rem", height: "6rem", border: "1px solid red", background: `${item.bgColor}`}} variants = {{hidden: {opacity: 0, scale: 0.4}, visible: {opacity : 1, scale: 1}}}
-transition = {{type: 'spring', duration: 0.5, delay: `${item.animateDelay}`}} initial = 'hidden' animate = 'visible' >  */}
-
-<motion.div  onClick={handleProcessClick} className = 'card shadow-2xl mt-5 hover:animate-jump'  variants = {{hidden: {opacity: 0, scale: 0.4}, visible: {opacity : 1, scale: 1}}}
+            <motion.div  onClick={handleProcessClick}  className = 'card shadow-2xl mt-5 hover:animate-jump' style={{width: "45rem", height: "6rem", background: `${item.bgColor}`}} variants = {{hidden: {opacity: 0, scale: 0.4}, visible: {opacity : 1, scale: 1}}}
 transition = {{type: 'spring', duration: 0.5, delay: `${item.animateDelay}`}} initial = 'hidden' animate = 'visible' > 
 
+{/* <motion.div  onClick={handleProcessClick} className = 'card shadow-2xl mt-5 hover:animate-jump'  variants = {{hidden: {opacity: 0, scale: 0.4}, visible: {opacity : 1, scale: 1}}}
+transition = {{type: 'spring', duration: 0.5, delay: `${item.animateDelay}`}} initial = 'hidden' animate = 'visible' >  */}
 
 
 
- {/* <div className="card-body text-3xl no-underline flex justify-between">
+
+ <div className="card-body text-3xl no-underline flex justify-between">
            <p className='text-white'>{item.processName}</p>
          <div className='flex'>
-         <p className='text-4xl mr-8 text-green-200 font-bold'> {item.percentCompleted}</p>
-         <p className='text-4xl text-purple-200 font-bold'> {item.hoursWorked}h</p>
+         <p className='text-4xl mr-8   font-bold'> {item.percentCompleted}</p>
+         <p className='text-4xl text-white font-bold'> {item.hoursWorked}h</p>
          </div>
-           </div> */}
+           </div>
 
-
+{/* 
 <button className="frutiger-button">
   <div className="inner">
     <div className="top-white"></div>
@@ -74,7 +74,7 @@ transition = {{type: 'spring', duration: 0.5, delay: `${item.animateDelay}`}} in
 
 <div >
 
-</div>
+</div> */}
            
            
            
@@ -94,11 +94,11 @@ transition = {{type: 'spring', duration: 0.5, delay: `${item.animateDelay}`}} in
 
 
    <div className={`p-5 ml-5 ${displayingProcessDetails? "block animate-fade-right" : "hidden"}  `} style={{width: "50rem", marginLeft: "10rem"}}  >
-<div className='font-bold my-5 text-4xl '> Mechanical Installation </div> 
+<div className='font-bold my-5 text-4xl '> Electrical Installation </div> 
 <div className='font-bold text-blue-800 mb-4 text-2xl'> Vendor <span className='text-black'>:  Vendor Abc Xyz</span> </div> 
 <div className='font-bold text-blue-800 mb-4 text-2xl'> Estimated Time <span className='text-black'>:  60 hours</span></div> 
-<div className='font-bold text-blue-800 mb-4 text-2xl'> Time worked <span className='text-black'>:  15 hours</span></div> 
-<div className='font-bold text-blue-800 mb-4 text-2xl'> % completed <span className='text-black'>:  25%</span> </div> 
+<div className='font-bold text-blue-800 mb-4 text-2xl'> Time worked  <span className='text-black'> :</span>   <span className='text-danger'>  14 hours</span></div> 
+<div className='font-bold text-blue-800 mb-4 text-2xl'> % completed  <span className='text-black'> :</span>  <span className='text-danger'> 50%</span> </div> 
 
 <div> <button className="btn btn-danger bg-gradient px-5" onClick={handleClick}>See Logs</button> </div> 
 
