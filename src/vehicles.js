@@ -33,13 +33,13 @@ const Vehicles = () => {
   return (
     <div class="w-screen h-screen  ">
       <Navbar />
-   <div className='px-24 pt-16 bg-slate-200'>
-   <p className='text-4xl font-bold '> Welcome <span className='text-orange-400'> Aparna !</span></p>
+   <div className='h-screen px-24 pt-16 bg-gradient-to-b from-slate-200 to-white'>
+   <p className='text-4xl font-bold '> Welcome <span className='text-teal-600'> Aparna !</span></p>
       <p className='text-2xl '> Please select the vehicle you working on today.</p>
     <div className='row'>
     {vehicles.map((item)=> 
           <div className='col-6  '> 
-           <Link to="/employeeprocess" className='no-underline' >
+           <Link to="/employeeprocess" className='no-underline text-black' >
            <div class="card mt-5 animate-jump-in animate-once animate-duration-500 animate-delay-800 animate-ease-in-out bg-white shadow-2xl" style={{width: "30rem"}}>
            <div className="card-body  text-xl no-underline">
             
@@ -56,7 +56,7 @@ const Vehicles = () => {
         )}
 
 
-        <div className='h-screen w-screen bg-slate-200'></div>
+       
 
     </div>
    </div>
