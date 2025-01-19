@@ -14,6 +14,7 @@ import EmployeeProcess from './employeeProcess';
 import ManageforEmployee from './manageforEmployee';
 import Vendor from './vendor';
 import NewVehicles from './allVehicles';
+import ManageEmployeeLogin from './manageEmployeeLogin';
 
 
 
@@ -31,6 +32,7 @@ function App() {
     <Route path="/adminprocesses"  element={<Processes />} />
     <Route path="/employeeprocess"  element={<EmployeeProcess />} />
     <Route path="/newvehicle"  element={<NewVehicles />} />
+    <Route path="/managedailylogs"  element={<ManageEmployeeLogin />} />
 
 
     <Route path="/manage"  element={<Manage />} />
