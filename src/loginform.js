@@ -12,7 +12,7 @@ const Loginform = () => {
 
       <div className='bg-white p-5 w-1/3 h-96 flex justify-content-end shadow-lg'>
         <div className='w-full h-full  flex justify-center items-center text-lg'> 
-        <form className="w-full">
+        <div className="w-full">
         <div className="form-group ">
           <p className='font-bold capitalize text-xl text-purple-700'>USER LOGIN</p>
       <label htmlFor="exampleInputEmail1">Email address</label>
@@ -38,7 +38,7 @@ const Loginform = () => {
     
    
 
-  </form> 
+  </div> 
   
         
         
