@@ -108,7 +108,7 @@ const more = Assign ? `    <div>
       
 
       <div className="flex">
-      <div className="flex">   <select className="w-72 h-16"> 
+      <div className="flex">   <select className="w-72 h-16 px-2"> 
 
 <option> Electrical Installation </option>
 <option> Mechanical Installation </option>
@@ -119,7 +119,7 @@ const more = Assign ? `    <div>
 
 
 </select> </div>
-        <div className="ml-4"> <select className="w-72 h-16"> 
+        <div className="ml-4"> <select className="w-72 h-16 px-2"> 
 
           <option> Vendor A </option>
           <option> Vendor B </option>
@@ -142,12 +142,12 @@ const more = Assign ? `    <div>
       </div>
 
       <div>
-            <label for="hehe" class="form-label">Extimated Time for the process </label>
-            <input type="text" class="my-6 ml-4 bg-white h-12 w-72" id="hehe" />
+            <label for="hehe" class="form-label">Estimated Time for the process </label>
+            <input type="text" class="my-6 ml-4 bg-white h-12 w-72 p-2" id="hehe" />
           </div>
 
-      <button className="btn mt-4 bg-gradient text-white" onClick={handleAssignClick} style={{background: "purple"}}>     Add New Process</button>
-      <button className="btn mt-4 ml-4 bg-gradient text-white" onClick={handleAssignClick} style={{background: "darkgoldenrod"}}>  Add New Vendor</button>
+      <button className="btn mt-4 bg-gradient text-white btn-primary " onClick={handleAssignClick} style={{background: ""}}>     <i class="fa-solid fa-plus"></i> Add New Process</button>
+      <button className="btn mt-4 ml-4 bg-gradient text-white" onClick={handleAssignClick} style={{background: "navy"}}>   <i class="fa-solid fa-plus"></i> Add New Vendor</button>
 
 
 </div>

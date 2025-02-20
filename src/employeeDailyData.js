@@ -20,7 +20,7 @@ const employeeDailyData = [
       vehicles: [
         { name: "2T1BURHE3JC076883", process: "Electrical Installation" }
       ],
-      activeStatus: "yellow",
+      activeStatus: "green",
       dailyStartTime: "09:00",
       dailyEndTime: "18:00",
       overTimeToday: "1",
@@ -61,7 +61,7 @@ const employeeDailyData = [
         { name: "1HGCM82633A654321", process: "Mechanical Installation" },
         { name: "JHMCM56557C505455", process: "Electrical Installation" }
       ],
-      activeStatus: "yellow",
+      activeStatus: "red",
       dailyStartTime: "06:00",
       dailyEndTime: "18:00",
       overTimeToday: "",
@@ -101,7 +101,7 @@ const employeeDailyData = [
       vehicles: [
         { name: "5NPE24AF4FH654321", process: "Mechanical Installation" }
       ],
-      activeStatus: "yellow",
+      activeStatus: "green",
       dailyStartTime: "10:00",
       dailyEndTime: "20:00",
       overTimeToday: "3",
@@ -142,7 +142,7 @@ const employeeDailyData = [
         { name: "2T1BURHE3JC076885", process: "Painting" },
         { name: "5NPE24AF4FH123457", process: "Mechanical Installation" }
       ],
-      activeStatus: "yellow",
+      activeStatus: "red",
       dailyStartTime: "09:00",
       dailyEndTime: "19:00",
       overTimeToday: "1",

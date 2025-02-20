@@ -32,7 +32,7 @@ function App() {
     <Route path="/adminprocesses"  element={<Processes />} />
     <Route path="/employeeprocess"  element={<EmployeeProcess />} />
     <Route path="/newvehicle"  element={<NewVehicles />} />
-    <Route path="/managedailylogs"  element={<ManageEmployeeLogin />} />
+    <Route path="/dailylogs"  element={<ManageEmployeeLogin />} />
 
 
     <Route path="/manage"  element={<Manage />} />

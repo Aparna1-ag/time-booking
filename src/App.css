@@ -152,16 +152,98 @@
   
 
 
+  #customSearchInput {
+    width: 20rem;
+    height: 2rem;
+
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid lightgray;
+    background: rgb(235, 235, 235);
+    border-radius: 0 6px 6px 0;
+
+  }
+
+
+  #customSearchInput:hover {
+    outline: none;
+    border: 2px solid gray;
+  }
+
+  .search-icon-container {
+    background: #0d6efd;
+    padding-top: 0.3rem;
+    padding-left: 0.7rem;
+    height: 2rem;
+    width: 2.5rem;
+    border-radius: 6px 0 0 6px;
+  }
 
 
 
 
+  .input-logs {
+    
+    outline: none;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    
+}
+
+.input-logs:hover {
+   
+    border: 1px solid slategray;
+}
+
+.animated-btn {
+  
+  border-radius: 4px;
+  /* color: teal;
+  border: 1.5px solid teal; */
+  transition: 0.3s ease-out;
+}
 
 
 
+.animated-btn:hover {
+  /* background: teal; */
+  transform: scale(1.2);
+
+  color: white;
+}
+
+.emp-details-btn {
+  border-radius: 7px;
+
+  color: #0d6efd;
+  border: 2px solid #0d6efd;
+  transition: 0.3s ease-out;
+
+}
 
 
+.emp-details-btn:hover {
+  background: #0d6efd;
+  transform: scale(1.1);
 
+  color: white;
+}
+
+.logs-btn {
+  border-radius: 4px;
+
+  color: red;
+  border: 2px solid red;
+  transition: 0.3s ease-out;
+}
+
+
+.logs-btn:hover {
+  background: red;
+  transform: scale(1.1);
+
+  color: white;
+}
 
 
 
