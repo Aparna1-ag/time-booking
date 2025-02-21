@@ -4,6 +4,9 @@
 @tailwind utilities;
 
 
+
+
+
 .more-bg {
     background-image: url("https://wallpapercave.com/wp/wp7442154.jpg");
     
@@ -207,7 +210,7 @@
 
 .animated-btn:hover {
   /* background: teal; */
-  transform: scale(1.2);
+  transform: scale(1.12);
 
   color: white;
 }
@@ -248,9 +251,91 @@
 
 
 
+
+.vehicle-list-table tbody td {
+  text-align: left;
+  padding: 1.5rem 1rem;
+
+}
+
+.vehicle-list-table tbody {
+  
+}
+
+.vehicle-list-table tr {
+  border: 1px solid gainsboro;
+}
+
+
+
+.vehicle-list-table tbody tr:hover {
+  background: white;
+}
+
+.vehicle-list-table thead tr {
+  background: #00679E;
+  color: white;
+  font-weight:normal
+}
+
+
+
+
+.edit-btn {
+  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: 0.3s ease-out;
+  color: darkcyan;
+  border: 1.5px solid darkcyan;
+  
+}
+
+.edit-btn:hover {
+  background: darkcyan;
+  transform: scale(1.2);
+
+  color: white;
+}
+
+.delete-btn {
+  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: crimson;
+  border: 1.5px solid crimson;
+  transition: 0.3s ease-out;
+}
+
+.delete-btn:hover {
+  background: crimson;
+  transform: scale(1.2);
+
+  color: white;
+}
+
+
+.vehicle-form input, .vehicle-form select {
+  border: 2px solid gainsboro
+}
+
+.vehicle-form input:hover, .vehicle-form select:hover {
+  border: 1.5px solid slategray
+}
+
+
+
+
+
+/* timer button */
+
   .button {
     --white: #ffe7ff;
-    --bg: green;
+    --bg: #00679E;
     --radius: 100px;
     outline: none;
     cursor: pointer;
@@ -267,10 +352,10 @@
       0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
   }
   .button .wrap {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 500;
     color: rgb(255, 255, 255);
-    padding: 32px 45px;
+    padding: 12px 25px;
     border-radius: inherit;
     position: relative;
     overflow: hidden;

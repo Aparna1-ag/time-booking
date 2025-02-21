@@ -25,11 +25,11 @@ const Loginform = () => {
   
     <div className='flex justify-center'>
    <div>
-   <button type="submit" className="btn btn-success  bg-gradient mt-4 text-white" style={{background: "", width: "16rem", height: "3rem"}}>  <Link to="/performance" className='text-white no-underline font-semibold' > Admin Login  </Link> </button>
+   <button type="submit" className="btn btn-success  bg-gradient mt-4 text-white" style={{background: "", border: "2px solid green", width: "16rem", height: "3rem"}}>  <Link to="/performance" className='text-white no-underline font-semibold' > Admin Login  </Link> </button>
 
 <br/>
 
-<button type="submit" className="btn   bg-gradient mt-3 text-white" style={{background: "blue", width: "16rem", height: "3rem"}}>  <Link to="/vehicles" className='text-white no-underline font-semibold'> Production Login   </Link> </button>
+<button type="submit" className="btn   bg-gradient mt-3 text-white" style={{background: "#00679E", border: "2px solid #0a5e8b", width: "16rem", height: "3rem"}}>  <Link to="/vehicles" className='text-white no-underline font-semibold'> Production Login   </Link> </button>
    </div>
     </div>
 

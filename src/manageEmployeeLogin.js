@@ -66,7 +66,7 @@ let onlineIndicator = `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2
    <div className='text-xs text-slate-600'> {item.employeeId}</div> 
  </div>
           </div>
-          <button className="emp-details-btn rounded-sm w-52 h-8 mt-2"><i class="fa-solid fa-circle-info mr-1"></i> View Employee Details </button>
+          <button className="emp-details-btn bg-gradient rounded-sm w-52 h-8 mt-2"><i class="fa-solid fa-circle-info mr-1"></i> View Employee Details </button>
 
           </div>
 

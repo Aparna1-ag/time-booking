@@ -34,7 +34,7 @@ const Vehicles = () => {
     <div class="w-screen h-screen  ">
       <Navbar />
    <div className='h-screen px-24 pt-16 bg-gradient-to-b from-slate-200 to-white'>
-   <p className='text-4xl font-bold '> Welcome <span className='text-teal-600'> Aparna !</span></p>
+   <p className='text-4xl font-bold '> Welcome <span className='' style={{color: "#0a5e8b"}}> Mike!</span></p>
       <p className='text-2xl '> Please select the vehicle you working on today.</p>
     <div className='row'>
     {vehicles.map((item)=> 
