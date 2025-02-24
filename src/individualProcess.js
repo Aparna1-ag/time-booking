@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import allProcesses from './allprocesses'
 import Navbar from './navbar'
+import EmployeeNavbar from './employeeNavbar'
 
 
 
@@ -12,7 +13,7 @@ const IndividualProcess = () => {
     const [timerDisplaying, setTimerDisplaying]  = useState(false)
     const [stoppedTimer, setStoppedTimer] = useState(false)
 
-    const [intialTime, setInitialTime] = useState(9)
+    const [intialTime, setInitialTime] = useState(1)
 
 
     const displayClass = timerDisplaying ? "block" : "none"
@@ -57,7 +58,7 @@ const IndividualProcess = () => {
 
 
    <div>
-     <Navbar />
+     <EmployeeNavbar />
     <div className=' bg-gradient-to-b  p-5 '>
 
     

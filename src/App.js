@@ -16,6 +16,7 @@ import Vendor from './vendor';
 import NewVehicles from './allVehicles';
 import ManageEmployeeLogin from './manageEmployeeLogin';
 import VehicleList from './vehicleList';
+import Dashboard from './dashboard';
 
 
 
@@ -36,6 +37,7 @@ function App() {
     <Route path="/vehiclelist"  element={<VehicleList />} />
 
 
+    <Route path="/admindashboard"  element={<Dashboard />} />
 
     <Route path="/manage"  element={<Manage />} />
     

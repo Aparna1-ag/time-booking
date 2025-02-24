@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 import Navbar from "./navbar";
 import { Link } from "react-router-dom";
 import vendorProcesses from "./vendorAccProcess";
+import EmployeeNavbar from "./employeeNavbar";
 
 const EmployeeProcess = () => {
   return (
     <div className=" w-screen  ">
-      <Navbar />
+      <EmployeeNavbar />
       <div className="px-16 pt-10">
         <div className="font-bold text-3xl"> Select Your Process </div>
         <div className=" text-2xl mb-10 ">

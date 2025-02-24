@@ -2,9 +2,11 @@ import React from 'react'
 import employeeDailyData from './employeeDailyData';
 import Navbar from './navbar';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const ManageEmployeeLogin = () => {
 
+  const navigate = useNavigate()
 
 let offlineIndicator = `https://clipart-library.com/img1/1561538.png`
 
@@ -18,13 +20,16 @@ let onlineIndicator = `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2
     <div>
 
         <Navbar />
-{/* {employeeDailyData.map(item => {
-    <div> {item.activeStatus}</div>
-})} */}
+
+        <button onClick={() => {navigate(-1)}} className=' mx-4 mt-3 btn- btn-sm btn-secondary bg-gradient'> <i class="fa-solid fa-arrow-left mr-1 text-light"></i> Back </button>
+
+
 
       
 
        <div className="row p-4">
+
+
 
        <div className="flex justify-between mb-3">
 
@@ -50,6 +55,7 @@ let onlineIndicator = `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2
             (
                 <div className='col-6'>
              <div className="card p-4 mt-3" style={{background: "#ececec", borderRadius: "16px"}}> 
+
 
 
          <div className='flex justify-between'>

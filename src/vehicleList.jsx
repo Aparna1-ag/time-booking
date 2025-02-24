@@ -1,14 +1,24 @@
 import React from 'react'
 import Navbar from './navbar'
+import { useNavigate } from 'react-router-dom'
 
 const VehicleList = () => {
+
+    const navigate = useNavigate()
+
+
   return (
     <div className=' '>
         <Navbar />
         <div className='p-4 '>
+
+        <button onClick={() => (navigate(-1))} className=' mb-6 btn- btn-sm btn-secondary bg-gradient'> <i class="fa-solid fa-arrow-left mr-1 text-light"></i> Back </button>
+
 <h3 className='mb-10'>All Vehicles</h3>
 
-  <div className="table-container mx-auto "  style={{width: "90%"}}>
+
+
+  <div className="table-container mx-auto "  style={{width: "98%"}}>
             <table className="table text-center table-sm vehicle-list-table " >
 
 
