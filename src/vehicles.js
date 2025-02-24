@@ -2,11 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from './navbar'
 import EmployeeNavbar from './employeeNavbar'
+import { useNavigate } from 'react-router-dom'
 
 
 const Vehicles = () => {
 
-
+const navigate = useNavigate()
 
   let vehicles = [
     {
@@ -34,8 +35,15 @@ const Vehicles = () => {
   return (
     <div class="w-screen h-screen  ">
       <EmployeeNavbar />
-   <div className='h-screen px-24 pt-16 bg-gradient-to-b from-slate-200 to-white'>
-   <p className='text-4xl font-bold '> Welcome <span className='' style={{color: "#0a5e8b"}}> Mike!</span></p>
+
+      
+
+   <div className='h-screen  bg-gradient-to-b from-slate-200 to-white'>
+   <button onClick={() => {navigate(-1)}} className='btn  btn-sm btn-secondary bg-gradient mt-3 ml-3'> <i class="fa-solid fa-arrow-left mr-1 text-light"></i> Back</button>
+
+
+ <div className='px-24 pt-16'>
+ <p className='text-4xl font-bold '> Welcome <span className='' style={{color: "#0a5e8b"}}> Mike!</span></p>
       <p className='text-2xl '> Please select the vehicle you working on today.</p>
     <div className='row'>
     {vehicles.map((item)=> 
@@ -60,6 +68,11 @@ const Vehicles = () => {
        
 
     </div>
+ </div>
+
+
+
+
    </div>
 
 

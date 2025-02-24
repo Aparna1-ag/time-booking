@@ -24,7 +24,7 @@ const Navbar = () => {
     <div className='flex '>
 
 
-    <Link to="/vehiclelist" className='no-underline mt-2'> <img src="    https://img.freepik.com/premium-psd/truck-3d-icon-car-vehicle_431668-866.jpg
+    <Link to="/vehiclelist" className='no-underline mt-2'> <img src=" https://i.pinimg.com/736x/73/02/5d/73025dd7190d28be301d79ffaaeb03f7.jpg
 " alt="settings-icon" className='ml-3' style={{width: "2.5rem", height: "2.5rem"}}  /> <p className={`text-center mr-5 ${showTextWhite ? 'text-white' : 'text-black'}`}>All Vehicles</p> </Link>
 
     <Link to="/dailylogs" className='no-underline mt-2'> <img src="https://static.vecteezy.com/system/resources/previews/028/605/133/original/gear-3d-rendering-icon-illustration-comma-separated-no-special-characters-free-png.png" alt="settings-icon" className='' style={{width: "2.5rem", height: "2.5rem"}}  /> <p className={`text-center ${showTextWhite ? 'text-white' : 'text-black'}`}>Manage</p> </Link>

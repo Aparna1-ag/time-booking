@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './navbar'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const VehicleList = () => {
 
@@ -14,7 +15,12 @@ const VehicleList = () => {
 
         <button onClick={() => (navigate(-1))} className=' mb-6 btn- btn-sm btn-secondary bg-gradient'> <i class="fa-solid fa-arrow-left mr-1 text-light"></i> Back </button>
 
+<div className='flex justify-between'>
 <h3 className='mb-10'>All Vehicles</h3>
+<Link to="/newvehicle" className='no-underline'>
+        <button className=" btn-sm btn-success bg-gradient rounded-sm w-44 h-8 animated-btn " > <i class="fa-solid fa-plus mr-1"></i> Add New Vehicle</button>
+        </Link>
+</div>
 
 
 

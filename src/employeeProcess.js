@@ -4,11 +4,16 @@ import Navbar from "./navbar";
 import { Link } from "react-router-dom";
 import vendorProcesses from "./vendorAccProcess";
 import EmployeeNavbar from "./employeeNavbar";
+import { useNavigate } from "react-router-dom";
 
 const EmployeeProcess = () => {
+
+  const navigate = useNavigate()
   return (
     <div className=" w-screen  ">
       <EmployeeNavbar />
+
+<button onClick={() => {navigate(-1)}} className='btn  btn-sm btn-secondary bg-gradient mt-3 ml-3'> <i class="fa-solid fa-arrow-left mr-1 text-light"></i> Back</button>
       <div className="px-16 pt-10">
         <div className="font-bold text-3xl"> Select Your Process </div>
         <div className=" text-2xl mb-10 ">

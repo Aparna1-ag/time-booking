@@ -23,7 +23,7 @@ const EmployeeNavbar = () => {
 
 
     
-    <Link to="/" className=' no-underline mr-4 mt-1' style={{width: "2rem", height: "2rem"}} > <img src=" https://cdn-icons-png.flaticon.com/512/8812/8812070.png" alt="user-icon" className='  mt-2 mb-1'   /><p className={`text-center ${showTextWhite ? 'text-white' : 'text-black'}`}>Mike</p> </Link>
+    <Link to="/" className=' no-underline mr-1 mt-1' style={{width: "2rem", height: "2rem"}} > <img src=" https://cdn-icons-png.flaticon.com/512/8812/8812070.png" alt="user-icon" className='  mt-2 mb-1'   /><p className={`text-center ${showTextWhite ? 'text-white' : 'text-black'}`}>Mike</p> </Link>
 
 
     </div>

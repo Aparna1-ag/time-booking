@@ -1,12 +1,19 @@
 import React from 'react'
 import Navbar from './navbar'
 import { Link } from 'react-router-dom'
+import EmployeeNavbar from "./employeeNavbar";
+ 
+
 
 
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className=''>
+
+      <EmployeeNavbar />
+
+      <h2 className='font-bold mt-4 ml-4' > Welcome <span style={{color: "#09689F"}}> Admin!</span></h2>
       
       {/* <div className=''> 
         <div className='card' style={{width: "18rem"}}>

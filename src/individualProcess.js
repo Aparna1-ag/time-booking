@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import allProcesses from './allprocesses'
 import Navbar from './navbar'
 import EmployeeNavbar from './employeeNavbar'
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -9,6 +10,8 @@ import EmployeeNavbar from './employeeNavbar'
 
 const IndividualProcess = () => {
 
+
+  const navigate = useNavigate()
 
     const [timerDisplaying, setTimerDisplaying]  = useState(false)
     const [stoppedTimer, setStoppedTimer] = useState(false)
@@ -59,6 +62,10 @@ const IndividualProcess = () => {
 
    <div>
      <EmployeeNavbar />
+
+
+
+<button onClick={() => {navigate(-1)}} className='btn  btn-sm btn-secondary bg-gradient mt-3 ml-3'> <i class="fa-solid fa-arrow-left mr-1 text-light"></i> Back</button>
     <div className=' bg-gradient-to-b  p-5 '>
 
     
@@ -89,7 +96,7 @@ const IndividualProcess = () => {
 
       <div className='mt-5 flex justify-center pb-20'> 
      <div>
-     {/* <div>  <button className='btn btn-lg btn-success'  onClick={handleClick} style={{display : `${startTimerButton}`}} > Start Timer</button> </div> */}
+  
    
 
     
@@ -101,14 +108,10 @@ const IndividualProcess = () => {
 
 
 
-        
-    {/* <div style={{display: `${stoppedTimerDisplayClass}`}} className='mt-5 '>
-       <p className='text-4xl font-bold'> 3 <span className='text-base font-normal'>hours</span> : 14 <span className='text-base font-normal'>minutes</span> </p>
-       
-    </div> */}
+  
 
      <div style={{display: `${displayClass}`}}>
-     {/* <img src="https://community.chartfactor.com/uploads/default/original/1X/031a32b8ac57a02c565bf4fe6117fec8e6b1ecab.gif" className='w-96 h-auto mt-5' alt='timer-img'  /> */}
+  
 
    <div className='flex justify-center'> <p className='font-bold text-4xl mb-32'> 00<span className='text-primary'>h</span>: 00<span className='text-primary'>m</span>: {intialTime}<span className='text-primary'>s</span></p></div>
     <div className='flex mt-4 justify-center'>
@@ -147,7 +150,7 @@ const IndividualProcess = () => {
 
 
 
-      <div className='flex justify-center  pt-32 pb-32 bg-gradient-to-b '>
+      <div className='flex justify-center  pt-20 pb-32 bg-gradient-to-b '>
       
 
 

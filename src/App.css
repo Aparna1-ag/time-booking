@@ -421,6 +421,12 @@ Link {
   width: 100%;
 }
 
+
+.back-btn {
+  background: #808080a0;
+  color: gray
+}
+
 /* .card__exit {
   grid-row: 1/2;
   justify-self: end;

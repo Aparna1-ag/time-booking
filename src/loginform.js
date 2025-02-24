@@ -47,7 +47,7 @@ const Loginform = () => {
                 >
                   {" "}
                   <Link
-                    to="/performance"
+                    to="/admindashboard"
                     className="text-white no-underline font-semibold"
                   >
                     {" "}

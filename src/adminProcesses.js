@@ -31,15 +31,15 @@ const Processes = () => {
 
 
   return (
-    <div className=' w-screen  '>
+    <div className=' w-screen  bg-gradient-to-b  from-white to bg-slate-200'>
 
 
       <Navbar />
 
-      <button onClick={() => {navigate(-1)}} className='m-3 btn- btn-sm btn-secondary bg-gradient'> <i class="fa-solid fa-arrow-left mr-1 text-light"></i> Back to Performance</button>
-      <div className='px-16 pt-10'>
+      <button onClick={() => {navigate(-1)}} className='m-3 btn- btn-sm btn-secondary bg-gradient'> <i class="fa-solid fa-arrow-left mr-1 text-light"></i> Back</button>
+      <div className='px-16 pt-3'>
       <div className='font-bold text-3xl'><span className='font-bold ' style={{color: "#00679F"}} >Vehicle A</span> </div>
-       <div className=' text-2xl mb-10 '> Select process to view more details </div>
+       <div className=' text-2xl mb-4 '> Select process to view more details </div>
      
 
        
@@ -64,7 +64,7 @@ transition = {{type: 'spring', duration: 0.5, delay: `${item.animateDelay}`}} in
  <div className=" text-2xl no-underline flex justify-between">
            <p className=''>{item.processName}</p>
          <div className='flex'>
-         <p className='text-2xl mr-8  text-slate-800 '> {item.percentCompleted}</p>
+         <p className='text-2xl mr-8  text-slate-500 '> {item.percentCompleted}</p>
          <p className='text-2xl  font-bold'> {item.hoursWorked}h</p>
          </div>
            </div>

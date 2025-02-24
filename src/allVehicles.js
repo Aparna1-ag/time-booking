@@ -61,7 +61,10 @@ const NewVehicles = () => {
     <div className="w-screen h-screen ">
       <Navbar />
 
-      <div className="w-screen h-screen pt-12 bg-slate-200 vehicle-form">
+     
+
+      <div className="w-screen h-screen pt-2 bg-slate-200 vehicle-form">
+      <h3 className="pl-4">Add New Vehicle</h3>
         <form className="w-1/2 m-auto">
           <div className="w-full flex">
             <div class="mb-3">
@@ -88,6 +91,14 @@ const NewVehicles = () => {
             </label>
             <input type="number" class=" bg-white h-10 w-24 ml-3 px-3 rounded-sm" placeholder="hrs"/>
             <input type="number" class=" bg-white h-10 w-24 ml-3 px-3 rounded-sm" placeholder="mins"/>
+
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label ">
+              Estimated Delivery Date: 
+            </label>
+            <input type="date" class=" bg-white h-10 w-48 ml-3 px-3 rounded-sm" placeholder=""/>
 
           </div>
 
